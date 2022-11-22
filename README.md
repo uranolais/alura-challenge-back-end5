@@ -7,7 +7,7 @@
 </p>
 
 # Descrição do Projeto
-O projeto se refere aos projetos feitos durante o challege de "[Back-End 05](https://cursos.alura.com.br/course/api-django-3-validacoes-buscas-filtros-deploy)",
+O projeto se refere aos projetos feitos durante o challege de "[Back-End 05](https://www.alura.com.br/challenges/back-end-5)",
 em que foi criado um projeto para implementação de base de dados, desenvolvimento de API com rotas CRUD, na qual é feito o controle de Videos a serem publicados e Categorias em que esses vídeos pertencem, fazendo um "AluraFlix".
 
 
