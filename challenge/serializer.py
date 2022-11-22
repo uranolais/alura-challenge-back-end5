@@ -24,3 +24,4 @@ class ListaCategoriaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Video
         fields = ['id', 'titulo', 'url', 'categoriaId']
+        #fields = ['titulo','categoriaId']

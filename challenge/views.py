@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, generics
 from challenge.models import *
 from challenge.serializer import *
 from rest_framework.authentication import BasicAuthentication
@@ -19,11 +19,9 @@ class CategoriaViewSet(viewsets.ModelViewSet):
     authentication_classes = [BasicAuthentication]
     permission_classes = [IsAuthenticated]
 
-class ListaCategoriaViewSet(viewsets.ModelViewSet):
+class ListaCategorias(generics.ListAPIView):
     '''Exibindo todos os vídeos de uma categoria específica'''
     def get_queryset(self):
-        queryset = Video.objects.filter(categoriaId=self.kwargs['id'])
+        queryset = Video.objects.filter(categoriaId_id=self.kwargs['pk'])
         return queryset
     serializer_class = ListaCategoriaSerializer
-    authentication_classes = [BasicAuthentication]
-    permission_classes = [IsAuthenticated]
