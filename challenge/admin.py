@@ -8,7 +8,7 @@ class Videos(admin.ModelAdmin):
     search_fields = ('titulo',)
     list_filter = ('categoriaId',)
     list_editable = ('categoriaId',)
-    list_per_page = 25
+    list_per_page = 5
     ordering = ('titulo',)
 
 admin.site.register(Video, Videos)

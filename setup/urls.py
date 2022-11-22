@@ -6,7 +6,6 @@ from rest_framework import routers
 router = routers.DefaultRouter()
 router.register('videos', VideoViewSet,basename='Videos')
 router.register('categorias', CategoriaViewSet,basename='Categorias')
-#router.register('lista', ListaCategorias,basename='Lista')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
